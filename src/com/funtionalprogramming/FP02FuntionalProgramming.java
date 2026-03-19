@@ -2,14 +2,12 @@ package com.funtionalprogramming;
 
 import java.util.List;
 
-public class FP01Structured {
+public class FP02FuntionalProgramming {
 
 	
-	public static void print(List<Integer> nums) {
+	public static void print(Integer nums) {
 		
-		for (Integer n : nums) {
-			System.out.println(n);
-		}
+		System.out.println(nums);
 	}
 	public static void main(String[] args) {
 		
@@ -17,8 +15,9 @@ public class FP01Structured {
 		
 		 List<Integer> numbers = List.of(1,32,23423,65,454,343,66654,44,9);
 		 
-		 print(numbers);
+		 numbers.stream().forEach(FP02FuntionalProgramming::print);
 		
 	}
+	
 
 }
